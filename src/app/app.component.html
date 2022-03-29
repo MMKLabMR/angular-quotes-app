@@ -1,1 +1,4 @@
 <app-header></app-header>
+<app-quote-form (addedQuote)="addQuote($event)"></app-quote-form>
+<app-quote-element [text]="'Novi'" [author]="'Novi'"></app-quote-element>
+<app-quote-element *ngFor="let quote of quotes" [author]="quote.author" [text]="quote.text"></app-quote-element>
