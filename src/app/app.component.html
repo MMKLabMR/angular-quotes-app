@@ -1,16 +1,16 @@
 <app-header></app-header>
-<app-quote-form (addedQuote)="addQuote($event)"></app-quote-form>
-<app-quote-element [text]="'Novi'" [author]="'Novi'"></app-quote-element>
-<app-quote-element *ngFor="let quote of quotes" [author]="quote.author" [text]="quote.text"></app-quote-element>
+<router-outlet></router-outlet>
+<!--<app-quote-form (addedQuote)="addQuote($event)"></app-quote-form>-->
+<!--<app-quote-element [text]="'Novi'" [author]="'Novi'"></app-quote-element>-->
 
 
-<p *ngIf="show">Sad me vidis!</p>
-<p *ngIf="!show">Sad me ne vidis!</p>
+<!--<p *ngIf="show">Sad me vidis!</p>-->
+<!--<p *ngIf="!show">Sad me ne vidis!</p>-->
 
-<div>
-  <p *ngIf="show; else temp;">Sad me vidis!</p>
-  <ng-template #temp>Sad me ne vidis!</ng-template>
-</div>
+<!--<div>-->
+<!--  <p *ngIf="show; else temp;">Sad me vidis!</p>-->
+<!--  <ng-template #temp>Sad me ne vidis!</ng-template>-->
+<!--</div>-->
 
 
-<button class="button" (click)="show=!show">Promeni</button>
+<!--<button class="button" (click)="show=!show">Promeni</button>-->

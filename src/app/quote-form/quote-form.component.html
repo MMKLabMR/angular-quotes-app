@@ -13,13 +13,13 @@
       <div class="field">
         <label class="label">Author</label>
         <div class="control">
-          <input class="input" type="text" (input)="onChangeOfAuthor($event)">
+          <input class="input" type="text" [(ngModel)]="author">
         </div>
       </div>
 
       <p class="title">'{{text}}' - {{author}}</p>
       <p class="title" [innerText]="fullQuote">Full quote</p>
-      <button class="button is-link" (click)="onAddQuote()">Add quote!</button>
+      <button class="button is-link" (click)="onAddQuote()">{{getTitle()}}</button>
     </div>
   </div>
 </div>

@@ -7,4 +7,15 @@ export class QuotesService {
   addQuote(quote: Quote) {
     this.quotes.push(quote);
   }
+
+  editQuote(quote: Quote) {
+    const quoteForUpdate = this.quotes.find((q) => {
+      return q.id === quote.id;
+    });
+
+    if (quoteForUpdate) {
+      quoteForUpdate.text = quote.text;
+      quoteForUpdate.author = quote.author;
+    }
+  }
 }

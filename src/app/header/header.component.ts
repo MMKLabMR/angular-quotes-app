@@ -9,7 +9,7 @@ export class HeaderComponent {
   title = 'nesto drugo';
 
   getTitle(): string {
-    return 'Quotes';
+    return 'MMK';
   }
 
 }
