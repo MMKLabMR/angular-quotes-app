@@ -1,5 +1,7 @@
 import {Quote} from './quote.model';
+import { Injectable } from '@angular/core';
 
+@Injectable()
 export class QuotesService {
   quotes: Quote[] = [new Quote('q1', 'Carpe diem.', 'Herocu'),
     new Quote('q2', 'Be yourself; everyone else is already taken.', 'Oscar Wilde')];
